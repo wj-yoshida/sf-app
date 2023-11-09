@@ -5,3 +5,5 @@ package-lock.json
 /public/assets
 /views/index.html
 /.my_env.sh
+
+!/package.json
