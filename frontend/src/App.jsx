@@ -9,6 +9,7 @@ import '@shopify/polaris/build/esm/styles.css';
 //import translations from "@shopify/polaris/locales/en.json";
 
 import Index from './pages/Index';
+import Test from './pages/Test';
 import SessionToken from './pages/SessionToken';
 import AdminLink from './pages/AdminLink';
 import ThemeAppExtension from './pages/ThemeAppExtension';
@@ -51,6 +52,10 @@ function App() {
     <Provider config={config}>
       <NavigationMenu
         navigationLinks={[
+          {
+            label: 'Test Session',
+            destination: '/test',
+          },
           {
             label: 'Session Token',
             destination: '/sessiontoken',
@@ -129,6 +134,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/test" element={<Test />} />
             <Route path="/sessiontoken" element={<SessionToken />} />
             <Route path="/adminlink" element={<AdminLink />} />
             <Route path="/themeappextension" element={<ThemeAppExtension />} />
