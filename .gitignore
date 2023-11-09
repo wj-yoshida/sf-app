@@ -6,4 +6,4 @@ package-lock.json
 /views/index.html
 /.my_env.sh
 
-!/package.json
+!package.json
